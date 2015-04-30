@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<driver>firefox</driver>
+	<waitTime>10</waitTime>
+	<isproxy>n</isproxy>
+	<proxy></proxy>
+	<port></port>
+	<database></database>
+	<locator></locator>
+	<testData></testData>
+	<linked></linked>
+	<testCase></testCase>
+	<rootPages>com.test.page</rootPages>
+</config>

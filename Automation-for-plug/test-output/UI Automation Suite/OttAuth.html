@@ -1,0 +1,468 @@
+<html>
+<head>
+<title>TestNG:  OttAuth</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OttAuth</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 15 16:13:51 CST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>99 seconds (99375 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.testcase.TestUI.setUp()'><b>setUp</b><br>Test class: com.test.testcase.TestUI</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+escriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835512},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768835862,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768833738,&quot;rdfTime&quot;:1410768833628},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835871},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835886},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835893}}}]
+1410768837559	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions.json
+1410768837561	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768837598	addons.xpi	DEBUG	No changes found
+1410768837601	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837602	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837606	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768837633	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837634	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768837635	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837637	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768839827	addons.repository	DEBUG	No addons.json found.
+1410768839828	DeferredSave.addons.json	DEBUG	Save changes
+1410768839830	DeferredSave.addons.json	DEBUG	Starting timer
+1410768840092	DeferredSave.addons.json	DEBUG	Starting write
+1410768840128	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.test.base.DriverManager.getDriver(DriverManager.java:13)
+	at com.test.base.TestBase.setUp(TestBase.java:35)
+	at com.test.run.RunControl.runTestNG(RunControl.java:110)
+	at com.test.run.Run.main(Run.java:10)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+escriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835512},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768835862,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768833738,&quot;rdfTime&quot;:1410768833628},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835871},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835886},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835893}}}]
+1410768837559	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions.json
+1410768837561	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768837598	addons.xpi	DEBUG	No changes found
+1410768837601	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837602	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837606	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768837633	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837634	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768837635	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837637	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768839827	addons.repository	DEBUG	No addons.json found.
+1410768839828	DeferredSave.addons.json	DEBUG	Save changes
+1410768839830	DeferredSave.addons.json	DEBUG	Starting timer
+1410768840092	DeferredSave.addons.json	DEBUG	Starting write
+1410768840128	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	... 29 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace763555691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace763555691'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+escriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835512},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768835862,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768833738,&quot;rdfTime&quot;:1410768833628},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835871},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835886},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835893}}}]
+1410768837559	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions.json
+1410768837561	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768837598	addons.xpi	DEBUG	No changes found
+1410768837601	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837602	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837606	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768837633	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837634	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768837635	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837637	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768839827	addons.repository	DEBUG	No addons.json found.
+1410768839828	DeferredSave.addons.json	DEBUG	Save changes
+1410768839830	DeferredSave.addons.json	DEBUG	Starting timer
+1410768840092	DeferredSave.addons.json	DEBUG	Starting write
+1410768840128	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.test.base.DriverManager.getDriver(DriverManager.java:13)
+	at com.test.base.TestBase.setUp(TestBase.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.test.run.RunControl.runTestNG(RunControl.java:110)
+	at com.test.run.Run.main(Run.java:10)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+escriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835512},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768835862,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768833738,&quot;rdfTime&quot;:1410768833628},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835871},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835886},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous101428403888459865webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768835893}}}]
+1410768837559	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions.json
+1410768837561	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768837598	addons.xpi	DEBUG	No changes found
+1410768837601	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837602	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768837606	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768837633	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837634	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768837635	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837635	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous101428403888459865webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768837637	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768839827	addons.repository	DEBUG	No addons.json found.
+1410768839828	DeferredSave.addons.json	DEBUG	Save changes
+1410768839830	DeferredSave.addons.json	DEBUG	Starting timer
+1410768840092	DeferredSave.addons.json	DEBUG	Starting write
+1410768840128	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.test.testcase.TestUI.tearDown()'><b>tearDown</b><br>Test class: com.test.testcase.TestUI</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+iver-profile\\extensions\\cpmanager@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884039,&quot;rdfTime&quot;:1409042500000},&quot;easyscreenshot@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884044},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884087,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768882781,&quot;rdfTime&quot;:1410768882661},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884090},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884094},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884098}}}]
+1410768885760	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions.json
+1410768885761	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768885799	addons.xpi	DEBUG	No changes found
+1410768885802	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885802	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885807	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768885836	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885836	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885837	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768885838	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885838	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885840	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768887807	addons.repository	DEBUG	No addons.json found.
+1410768887808	DeferredSave.addons.json	DEBUG	Save changes
+1410768887809	DeferredSave.addons.json	DEBUG	Starting timer
+1410768887926	DeferredSave.addons.json	DEBUG	Starting write
+1410768887954	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : ERROR file:///C:/Users/zhangfei/AppData/Local/Temp/anonymous7678838577235202204webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js:159 - TypeError: w.gBrowser is undefined
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.test.base.DriverManager.getDriver(DriverManager.java:13)
+	at com.test.base.TestBase.tearDown(TestBase.java:40)
+	at com.test.run.RunControl.runTestNG(RunControl.java:110)
+	at com.test.run.Run.main(Run.java:10)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+iver-profile\\extensions\\cpmanager@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884039,&quot;rdfTime&quot;:1409042500000},&quot;easyscreenshot@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884044},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884087,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768882781,&quot;rdfTime&quot;:1410768882661},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884090},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884094},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884098}}}]
+1410768885760	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions.json
+1410768885761	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768885799	addons.xpi	DEBUG	No changes found
+1410768885802	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885802	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885807	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768885836	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885836	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885837	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768885838	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885838	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885840	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768887807	addons.repository	DEBUG	No addons.json found.
+1410768887808	DeferredSave.addons.json	DEBUG	Save changes
+1410768887809	DeferredSave.addons.json	DEBUG	Starting timer
+1410768887926	DeferredSave.addons.json	DEBUG	Starting write
+1410768887954	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : ERROR file:///C:/Users/zhangfei/AppData/Local/Temp/anonymous7678838577235202204webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js:159 - TypeError: w.gBrowser is undefined
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	... 29 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391890632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391890632'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+iver-profile\\extensions\\cpmanager@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884039,&quot;rdfTime&quot;:1409042500000},&quot;easyscreenshot@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884044},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884087,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768882781,&quot;rdfTime&quot;:1410768882661},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884090},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884094},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884098}}}]
+1410768885760	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions.json
+1410768885761	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768885799	addons.xpi	DEBUG	No changes found
+1410768885802	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885802	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885807	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768885836	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885836	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885837	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768885838	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885838	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885840	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768887807	addons.repository	DEBUG	No addons.json found.
+1410768887808	DeferredSave.addons.json	DEBUG	Save changes
+1410768887809	DeferredSave.addons.json	DEBUG	Starting timer
+1410768887926	DeferredSave.addons.json	DEBUG	Starting write
+1410768887954	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : ERROR file:///C:/Users/zhangfei/AppData/Local/Temp/anonymous7678838577235202204webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js:159 - TypeError: w.gBrowser is undefined
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+Build info: version: &apos;2.34.0&apos;, revision: &apos;11cd0ef&apos;, time: &apos;2013-08-06 17:10:22&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_45&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.test.base.DriverManager.getDriver(DriverManager.java:13)
+	at com.test.base.TestBase.tearDown(TestBase.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.test.run.RunControl.runTestNG(RunControl.java:110)
+	at com.test.run.Run.main(Run.java:10)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+iver-profile\\extensions\\cpmanager@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884039,&quot;rdfTime&quot;:1409042500000},&quot;easyscreenshot@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\easyscreenshot@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884044},&quot;fennecinstaller@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fennecinstaller@mozillaonline.com&quot;,&quot;mtime&quot;:1410768884087,&quot;rdfTime&quot;:1405927806000},&quot;fxdriver@googlecode.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;mtime&quot;:1410768882781,&quot;rdfTime&quot;:1410768882661},&quot;semodifier@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\semodifier@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884090},&quot;tabimprovelite@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\tabimprovelite@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884094},&quot;wx-assistant@mozillaonline.com&quot;:{&quot;descriptor&quot;:&quot;C:\\Users\\zhangfei\\AppData\\Local\\Temp\\anonymous7678838577235202204webdriver-profile\\extensions\\wx-assistant@mozillaonline.com.xpi&quot;,&quot;mtime&quot;:1410768884098}}}]
+1410768885760	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions.json
+1410768885761	addons.xpi-utils	DEBUG	Successfully read XPI database
+1410768885799	addons.xpi	DEBUG	No changes found
+1410768885802	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885802	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\commonfix@mozillaonline.com.xpi
+1410768885807	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 0.9
+1410768885836	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885836	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\semodifier@mozillaonline.com.xpi
+1410768885837	addons.xpi	DEBUG	Calling bootstrap method startup on semodifier@mozillaonline.com version 0.2
+1410768885838	addons.xpi	DEBUG	Registering manifest for C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885838	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\zhangfei\AppData\Local\Temp\anonymous7678838577235202204webdriver-profile\extensions\wx-assistant@mozillaonline.com.xpi
+1410768885840	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 1.1.2
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+[ERROR] Can&apos;t find Apple Application Support, OS is: Wow6432Node\
+1410768887807	addons.repository	DEBUG	No addons.json found.
+1410768887808	DeferredSave.addons.json	DEBUG	Save changes
+1410768887809	DeferredSave.addons.json	DEBUG	Starting timer
+1410768887926	DeferredSave.addons.json	DEBUG	Starting write
+1410768887954	DeferredSave.addons.json	DEBUG	Write succeeded
+System JS : ERROR file:///C:/Users/zhangfei/AppData/Local/Temp/anonymous7678838577235202204webdriver-profile/extensions/cpmanager@mozillaonline.com/components/mozCNGuard.js:159 - TypeError: w.gBrowser is undefined
+System JS : WARNING resource://addoninstaller/log4moz.js:494 - mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 677: aUrl is undefined
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.testcase.TestUI.getTestCaseName()'><b>getTestCaseName</b><br>Test class: com.test.testcase.TestUI</td>
+<td></td>
+<td>0</td>
+<td>com.test.testcase.TestUI@7c4c51</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.testcase.TestUI.testUI()'><b>testUI</b><br>Test class: com.test.testcase.TestUI</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at com.test.run.RunControl.runTestNG(RunControl.java:110)
+	at com.test.run.Run.main(Run.java:10)
+Caused by: java.lang.NullPointerException
+	at com.test.base.TestBase.dataProvider(TestBase.java:70)
+	... 19 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628012732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628012732'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.test.run.RunControl.runTestNG(RunControl.java:110)
+	at com.test.run.Run.main(Run.java:10)
+Caused by: java.lang.NullPointerException
+	at com.test.base.TestBase.dataProvider(TestBase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
+	... 19 more
+</pre></div></td>
+<td>0</td>
+<td>com.test.testcase.TestUI@7c4c51</td></tr>
+</table><p>
+</body>
+</html>

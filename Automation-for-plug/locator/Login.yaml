@@ -1,0 +1,12 @@
+登录链接:
+  type: xpath
+  value: "//div[@id='js_N_navHighlight']/a"
+用户名输入框:
+  type: id
+  value: js_loginframe_username
+密码输入框:
+  type: xpath
+  value: "//div[@id='js_N_login_wrap']//input[@type='password']"
+登录按钮:
+  type: xpath
+  value: "//div[@id='js_N_login_wrap']//button"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<keyword>
+	
+	<system-api>
+		<Assert>Assert</Assert>
+		<Log>Log</Log>
+		<增加参数>addValueToParam</增加参数>
+	</system-api>
+	
+	<driver-api>
+		<点击>click</点击>	
+		<输入>sendKeys</输入>
+		<属性值>getAttribute</属性值>
+		<清空>clear</清空>
+	</driver-api>
+	
+	<self-api>
+		<搜索>search</搜索>
+		<点击对象>clickElement</点击对象>
+		<等待>sleep</等待>
+	</self-api>
+	
+	<other-api>
+		<信息>comment</信息>
+		<比较>assertEquals</比较>
+	</other-api>	
+	
+</keyword>

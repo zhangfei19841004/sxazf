@@ -1,0 +1,54 @@
+TransferRemittance_P:
+  type:xpath
+  value:"//div[@id='accordion']//h3[@class='menu_bar']//span[text()='Transfer & Remittance']"
+TransferRemittance_C:
+  type:xpath
+  value:"//div[@id='accordion']//span[@action='transfer_c_transfer_filter']"
+ChooseAccount:
+  type:xpath
+  value:"//div[@id='trs01_transAcctList']/div[%s]//input"
+MyAccountList:
+  type:xpath
+  value:"//dl[@id='trs01_myAcct']//span[text()='My Account']"
+MyAccount:
+  type:xpath
+  value:"//dl[@id='trs01_myAcct']//dd[@class='list-01'][%s]//input"
+AccountFromCurrency:
+  type:xpath
+  value:"//div[@id='fromCurrList']//label[@class='txt']"
+AccountInCurrency:
+  type:xpath
+  value:"//div[@id='toCurrs']//label[@class='txt']"
+Currency:
+  type:xpath
+  value:"//ul[@class='list']//a[text()='%s']"
+NextStep:
+  type:xpath
+  value:"//a[@id='next']/span"
+ViewExchangeRate:
+  type:id
+  value:a_246_798
+CloseView:
+  type:xpath
+  value:"//a[@id='btnHideMsg']/span"
+ConfirmCloseView:
+  type:xpath
+  value:"//a[@id='confirm']/span"
+InputOutAmount:
+  type:xpath
+  value:"//input[contains(@id,'txt_outmoney_')]"
+Description:
+  type:id
+  value:ta_discription_z_8180
+Submit:
+  type:id
+  value:btn_submit_800
+EToken:
+  type:id
+  value:psw_e_token_4337
+Confirm:
+  type:id
+  value:btn_confirm_4338
+ClosePanel:
+  type:id
+  value:close

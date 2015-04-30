@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<keyword>
+	<open>"打开"</open>
+	<import>"创建页面对象"</import>
+	<importName>"对象名"</importName>
+	<page>"(页面|对象)"</page>	
+	<element_b>(</element_b>
+	<element_e>)</element_e>
+	<element_b_>&lt;</element_b_>
+	<element_e_>&gt;</element_e_>
+	<method_b>[</method_b>
+	<method_e>]</method_e>	
+	<parameter_b>{</parameter_b>
+	<parameter_e>}</parameter_e>
+	<object_b>"</object_b>	
+	<return>"返回值"</return>
+	<if>"如果"</if>
+	<isEquals>(|不)等于</isEquals>
+	<or>"或者"</or>
+	<and>"并且"</and>
+	<logicBlock>-+</logicBlock>
+	<equals>等于</equals>
+	<notEquals>不等于</notEquals>
+	<for>"循环".*从.*到.*</for>
+	
+	<getElement>getElement</getElement>
+	<getElementNoWait>getElementNoWait</getElementNoWait>
+	<sendKeys>sendKeys</sendKeys>
+	<executePageMethod>executePageMethod</executePageMethod>
+		
+</keyword>

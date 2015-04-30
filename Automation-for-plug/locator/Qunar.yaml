@@ -1,0 +1,30 @@
+单程:
+  type:id
+  value:searchTypeSng
+出发地:
+  type:xpath
+  value:"//div[@id='js_flighttype_tab_domestic']//input[@name='fromCity']"
+目的地:
+  type:xpath
+  value:"//div[@id='js_flighttype_tab_domestic']//input[@name='toCity']"
+出发时间:
+  type:xpath
+  value:"//div[@id='js_flighttype_tab_domestic']//input[@name='fromDate']"
+返回时间选择按钮:
+  type:xpath
+  value:"//div[@id='dom_arrivalDateDiv_disable']//div[@class='sicon']"
+搜索:
+  type:xpath
+  value:"//div[@id='js_flighttype_tab_domestic']//button[text()='搜　索']"
+搜索结果:
+  type:xpath
+  value:"//div[@class='outContainer']"
+结果一栏:
+  type:xpath
+  value:"//div[@class='outContainer']/div[%s]"
+结果信息:
+  type:xpath
+  value:"//div[@class='outContainer']/div[%s]/div[starts-with(@id,'itemRowXI')][%s]"
+随机预订:
+  type:id
+  value:%s

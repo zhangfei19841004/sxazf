@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<font color=Blue>[2015-03-09 16:13:12] "打开"{http://www.baidu.com}</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=Blue>[2015-03-09 16:13:13] "页面"{baiduSearch},(百度输入框)[输入]{Hello world}</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=Blue>[2015-03-09 16:13:13] (百度一下按钮)[点击]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=Blue>[2015-03-09 16:13:14] "页面"{baiduSearchResult},(百度搜索结果输入框)[属性值]{value},"返回值"{Hello world}</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=Blue>[2015-03-09 16:13:14] "对象"{Assert},[比较]{Hello world,Hello world}</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=Blue>[2015-03-09 16:13:14] [Verify Pass]: Hello world</font>]]>
+    </line>
+  </reporter-output>
+  <suite name="UI Automation Suite" duration-ms="13950" started-at="2015-03-09T08:13:04Z" finished-at="2015-03-09T08:13:18Z">
+    <groups>
+    </groups>
+    <test name="BaiduSearch" duration-ms="13950" started-at="2015-03-09T08:13:04Z" finished-at="2015-03-09T08:13:18Z">
+      <class name="com.test.testcase.TestUI">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.testcase.TestUI@1d5a0305]" name="setUp" is-config="true" duration-ms="7695" started-at="2015-03-09T16:13:04Z" finished-at="2015-03-09T16:13:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getTestCaseName(java.lang.String)[pri:0, instance:com.test.testcase.TestUI@1d5a0305]" name="getTestCaseName" is-config="true" duration-ms="30" started-at="2015-03-09T16:13:12Z" finished-at="2015-03-09T16:13:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BaiduSearch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestCaseName -->
+        <test-method status="PASS" signature="testUI(java.util.Map)[pri:0, instance:com.test.testcase.TestUI@1d5a0305]" name="testUI" duration-ms="1803" started-at="2015-03-09T16:13:12Z" data-provider="dataProvider" finished-at="2015-03-09T16:13:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{搜索期望值=Hello world, 实际值=Hello world, 搜索关键字=Hello world, url=http://www.baidu.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<font color=Blue>[2015-03-09 16:13:12] "打开"{http://www.baidu.com}</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=Blue>[2015-03-09 16:13:13] "页面"{baiduSearch},(百度输入框)[输入]{Hello world}</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=Blue>[2015-03-09 16:13:13] (百度一下按钮)[点击]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=Blue>[2015-03-09 16:13:14] "页面"{baiduSearchResult},(百度搜索结果输入框)[属性值]{value},"返回值"{Hello world}</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=Blue>[2015-03-09 16:13:14] "对象"{Assert},[比较]{Hello world,Hello world}</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=Blue>[2015-03-09 16:13:14] [Verify Pass]: Hello world</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUI -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.testcase.TestUI@1d5a0305]" name="tearDown" is-config="true" duration-ms="4402" started-at="2015-03-09T16:13:14Z" finished-at="2015-03-09T16:13:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.testcase.TestUI -->
+    </test> <!-- BaiduSearch -->
+  </suite> <!-- UI Automation Suite -->
+</testng-results>

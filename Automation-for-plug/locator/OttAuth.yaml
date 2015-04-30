@@ -1,0 +1,9 @@
+loginName:
+  type:xpath
+  value:"//input[@name='login_username']"
+loginPwd:
+  type:xpath
+  value:"//input[@name='login_password']"
+LoginButton:
+  type:xpath
+  value:"//div[@class='login_bar']/input"

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<common>
+		<链接>http://email.163.com/</链接>
+	</common>
+	<testUI>
+		<description>test demo for 2</description>	
+		<t1>1</t1>	
+		<t2>1</t2>	
+	</testUI>	
+	
+</data>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UI Automation Suite]">
+  <parameter name="testCase" value="TestBaidu"/>
+  <test name="TestBaidu(failed)">
+    <parameter name="testCase" value="TestBaidu"/>
+    <classes>
+      <class name="com.test.testcase.TestUI">
+        <methods>
+          <include name="getTestCaseName"/>
+          <include name="testUI" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.testcase.TestUI -->
+    </classes>
+  </test> <!-- TestBaidu(failed) -->
+</suite> <!-- Failed suite [UI Automation Suite] -->

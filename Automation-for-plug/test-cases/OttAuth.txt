@@ -1,0 +1,5 @@
+﻿"打开"{http://http://172.16.12.84:8080/ottauth-service}
+"页面"{ottAuth},[输入](loginName)
+[输入](loginPwd)
+[点击](LoginButton)
+[等待]{5}

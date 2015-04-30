@@ -1,0 +1,7 @@
+﻿"打开"{链接}
+"页面"{emailLogin},输入框(用户名输入框)[clear]
+"页面"{emailLogin},输入框(用户名输入框)[输入]{hexinrong1@163.com}
+"页面"{emailLogin},输入框(密码输入框)[输入]{199005091594hxr}
+"页面"{emailLogin},[点击]按钮(登陆按钮)
+"页面"{emailLogin},[等待]{3}
+"对象"{Assert},判断[比较]{t1,10}
