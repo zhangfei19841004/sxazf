@@ -37,8 +37,8 @@
 1.对于Locator的保存方式，支持参数化，比如
 
 baidu_input:<br>
-  type: id<br>
-  value: %s
+>>type: id<br>
+>>value: %s
 
 也就是说这个%s要是脚本中被替换掉，于是我们可以这样使用2."页面"{testBaidu},输入框(baidu_input){kw}[sendKeys]{hello world},如果有多个参数要替换，用逗号隔开。
 
@@ -46,13 +46,13 @@ baidu_input:<br>
 
 3.对于有一些公共方法，要被抽象出去，抽象出来的，也放在txt中，也用中文来写，即一个txt文件就代表一个方法，但是java是面向对象的，这些个方法要有对象，所以我把这些方法与page联系在了一起，联系方式为：
 
-LinkedPages.xml:
+LinkedPages.xml:<br>
 
-<Pages>
-    <TestBaidu>
-        <methohd name='search' return='' linked='TestBaidu1'/>
-    </TestBaidu>    
-</Pages>
+\<Pages\><br>
+>>>>\<TestBaidu\>
+>>>>>>>>\<methohd name='search' return='' linked='TestBaidu1'/\>
+>>>>\</TestBaidu\>    
+\</Pages\>
 
 TestBaidu就是代表页面page,里面有一个search方法，具体的实现在TestBaidu1.txt中，没有返回值（return的值为空或者没有return属性）
 
