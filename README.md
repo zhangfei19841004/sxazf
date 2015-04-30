@@ -1,4 +1,4 @@
-#教你如何写框架------用中文构建脚本（更新版）
+#教你如何写框架------用中文构建脚本
 
 用中文写脚本，完全弃掉IDE，就能完成java+selenium的自动化测试过程，体验一下这神奇的过程吧。
 
@@ -36,8 +36,8 @@
 
 1.对于Locator的保存方式，支持参数化，比如
 
-baidu_input:
->>type: id
+baidu_input:<br>
+>>type: id<br>
 >>value: %s
 
 也就是说这个%s要是脚本中被替换掉，于是我们可以这样使用2."页面"{testBaidu},输入框(baidu_input){kw}[sendKeys]{hello world},如果有多个参数要替换，用逗号隔开。
